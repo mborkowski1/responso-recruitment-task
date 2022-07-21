@@ -22,3 +22,13 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### App Run
+In first terminal:
+```
+node server.mjs
+```
+In second terminal:
+```
+npm run serve
+```

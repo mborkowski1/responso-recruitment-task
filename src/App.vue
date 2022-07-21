@@ -1,17 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <Chat />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import Chat from './components/Chat.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Chat,
+  },
 });
 </script>
 
@@ -20,8 +19,13 @@ export default defineComponent({
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+body, html {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 </style>
